@@ -1,0 +1,90 @@
+[
+  {
+    "task_id": "humaneval_HumanEval/31",
+    "task_type": "code_generation",
+    "cycle": 7,
+    "regression_risk": 0.7524945661504527,
+    "gdi": 0.5217659693922536,
+    "cps": 1.0,
+    "quality": 0.3627450980392156,
+    "severity": "MEDIUM",
+    "recommendation": "CAUTION: Elevated regression risk - consider intervention"
+  },
+  {
+    "task_id": "humaneval_HumanEval/160",
+    "task_type": "code_generation",
+    "cycle": 1,
+    "regression_risk": 0.738592076478705,
+    "gdi": 0.3024906119411284,
+    "cps": 0.75,
+    "quality": 0.20580524344569287,
+    "severity": "MEDIUM",
+    "recommendation": "CAUTION: Elevated regression risk - consider intervention"
+  },
+  {
+    "task_id": "humaneval_HumanEval/58",
+    "task_type": "code_generation",
+    "cycle": 11,
+    "regression_risk": 0.7490353702392892,
+    "gdi": 0.5067396412704593,
+    "cps": 1.0,
+    "quality": 0.3333333333333333,
+    "severity": "MEDIUM",
+    "recommendation": "CAUTION: Elevated regression risk - consider intervention"
+  },
+  {
+    "task_id": "humaneval_HumanEval/132",
+    "task_type": "code_generation",
+    "cycle": 8,
+    "regression_risk": 0.7021459774892475,
+    "gdi": 0.519412211769165,
+    "cps": 1.0,
+    "quality": 0.34301075268817205,
+    "severity": "MEDIUM",
+    "recommendation": "CAUTION: Elevated regression risk - consider intervention"
+  },
+  {
+    "task_id": "humaneval_HumanEval/77",
+    "task_type": "code_generation",
+    "cycle": 3,
+    "regression_risk": 0.8027516543348181,
+    "gdi": 0.5794184108426058,
+    "cps": 1.0,
+    "quality": 0.1222222222222222,
+    "severity": "MEDIUM",
+    "recommendation": "CAUTION: Elevated regression risk - consider intervention"
+  },
+  {
+    "task_id": "humaneval_HumanEval/89",
+    "task_type": "code_generation",
+    "cycle": 6,
+    "regression_risk": 0.7537365595652245,
+    "gdi": 0.43613017251812947,
+    "cps": 1.0,
+    "quality": 0.15925925925925927,
+    "severity": "MEDIUM",
+    "recommendation": "CAUTION: Elevated regression risk - consider intervention"
+  },
+  {
+    "task_id": "humaneval_HumanEval/154",
+    "task_type": "code_generation",
+    "cycle": 4,
+    "regression_risk": 0.7516119682869794,
+    "gdi": 0.5810505982843298,
+    "cps": 1.0,
+    "quality": 0.34848484848484845,
+    "severity": "MEDIUM",
+    "recommendation": "CAUTION: Elevated regression risk - consider intervention"
+  },
+  {
+    "task_id": "gsm8k_533",
+    "task_type": "mathematical_reasoning",
+    "cycle": 1,
+    "regression_risk": 0.7248786903615247,
+    "gdi": 0.6886279874543213,
+    "cps": 1.0,
+    "quality": 0.8888888888888888,
+    "severity": "MEDIUM",
+    "recommendation": "CAUTION: Elevated regression risk - consider intervention"
+  }
+]

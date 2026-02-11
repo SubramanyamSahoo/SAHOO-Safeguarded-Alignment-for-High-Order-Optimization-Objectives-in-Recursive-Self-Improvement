@@ -1,0 +1,187 @@
+{
+  "experiment_info": {
+    "model": "Qwen/Qwen3-8B",
+    "max_cycles": 20,
+    "total_tasks": 189,
+    "timestamp": "2026-02-10T14:42:31.991683"
+  },
+  "by_task_type": {
+    "code_generation": {
+      "num_tasks": 63,
+      "total_cycles": 591,
+      "mean_cycles_per_task": 9.380952380952381,
+      "gdi_mean": 0.3195567561422478,
+      "gdi_std": 0.11954989804687573,
+      "gdi_max": 0.5810505982843298,
+      "gdi_ci": [
+        0.30932740446416823,
+        0.3292632330195913
+      ],
+      "cps_mean": 0.9961928934010152,
+      "cps_min": 0.75,
+      "cps_ci": [
+        0.9936548223350253,
+        0.9983079526226735
+      ],
+      "car_mean": 0.6604809518453268,
+      "car_ci": [
+        0.6535594393424915,
+        0.6665650141149704
+      ],
+      "quality_mean": 0.7333453903648647,
+      "quality_ci": [
+        0.7215827663891892,
+        0.7444522313091514
+      ],
+      "mean_cycles_to_drift": 3.282051282051282,
+      "tasks_with_drift": 39,
+      "drift_rate": 0.6190476190476191,
+      "stop_reasons": {
+        "converged": 43,
+        "critical_drift_detected": 15,
+        "maximum_cycles_reached": 5
+      }
+    },
+    "truthfulness": {
+      "num_tasks": 63,
+      "total_cycles": 727,
+      "mean_cycles_per_task": 11.53968253968254,
+      "gdi_mean": 0.35374763561096756,
+      "gdi_std": 0.11592778631817899,
+      "gdi_max": 0.4998040242098786,
+      "gdi_ci": [
+        0.34445725473607414,
+        0.36237936857201913
+      ],
+      "cps_mean": 0.9683631361760661,
+      "cps_min": 0.75,
+      "cps_ci": [
+        0.9623366574965612,
+        0.9740457359009629
+      ],
+      "car_mean": 0.6125533485889344,
+      "car_ci": [
+        0.6071968152472201,
+        0.6176220441254472
+      ],
+      "quality_mean": 0.6750341359694868,
+      "quality_ci": [
+        0.6728480092046119,
+        0.6774399384621187
+      ],
+      "mean_cycles_to_drift": 3.719298245614035,
+      "tasks_with_drift": 57,
+      "drift_rate": 0.9047619047619048,
+      "stop_reasons": {
+        "maximum_cycles_reached": 21,
+        "critical_drift_detected": 37,
+        "converged": 5
+      }
+    },
+    "mathematical_reasoning": {
+      "num_tasks": 63,
+      "total_cycles": 686,
+      "mean_cycles_per_task": 10.88888888888889,
+      "gdi_mean": 0.3297527680142985,
+      "gdi_std": 0.12258233213137541,
+      "gdi_max": 0.6886279874543213,
+      "gdi_ci": [
+        0.3201676680135626,
+        0.33921670129214576
+      ],
+      "cps_mean": 1.0,
+      "cps_min": 1.0,
+      "cps_ci": [
+        1.0,
+        1.0
+      ],
+      "car_mean": 0.7532577660333287,
+      "car_ci": [
+        0.7467999995928524,
+        0.760093728948629
+      ],
+      "quality_mean": 0.9828960155490768,
+      "quality_ci": [
+        0.978585195983155,
+        0.9877267573696145
+      ],
+      "mean_cycles_to_drift": 4.066666666666666,
+      "tasks_with_drift": 60,
+      "drift_rate": 0.9523809523809523,
+      "stop_reasons": {
+        "maximum_cycles_reached": 15,
+        "critical_drift_detected": 47,
+        "converged": 1
+      }
+    }
+  },
+  "overall": {
+    "gdi": {
+      "mean": 0.3354505852430392,
+      "std": 0.12017139977233822,
+      "median": 0.36193518511553513,
+      "max": 0.6886279874543213,
+      "ci_95": [
+        0.32992509863233416,
+        0.3408297955857897
+      ]
+    },
+    "cps": {
+      "mean": 0.9874001996007984,
+      "std": 0.05469181958666834,
+      "min": 0.75,
+      "ci_95": [
+        0.9850299401197605,
+        0.9896457085828343
+      ]
+    },
+    "car": {
+      "mean": 0.6748529712892252,
+      "std": 0.09970014101046046,
+      "ci_95": [
+        0.670398719178952,
+        0.6794220163696159
+      ]
+    },
+    "quality": {
+      "mean": 0.797616571468123,
+      "std": 0.16093682395639244,
+      "ci_95": [
+        0.7911527631914752,
+        0.8045179638315623
+      ]
+    },
+    "total_measurements": 2004
+  },
+  "long_horizon_stability": {
+    "stability_score": {
+      "mean": 0.8247078084349537,
+      "std": 0.06871685377506791,
+      "min": 0.6046437832846085
+    },
+    "drift_trend": {
+      "mean_slope": 0.05094976416732733,
+      "std_slope": 0.04797647226056205,
+      "t_statistic": 14.5610533098831,
+      "p_value": 1.1880958182050411e-32,
+      "is_increasing_significant": "True"
+    },
+    "convergence": {
+      "rate": 0.2751322751322751,
+      "mean_cycle": 7.980769230769231,
+      "std_cycle": 4.190145878750178
+    },
+    "time_to_instability": {
+      "mean": 4.5,
+      "std": 4.185529442784737,
+      "rate": 0.708994708994709
+    }
+  },
+  "regression_risk": {
+    "mean_risk": 0.45269397463241356,
+    "max_risk": 0.8027516543348181,
+    "total_regressions": 170,
+    "max_consecutive": 2,
+    "high_risk_rate": 0.003992015968063872
+  }
+}

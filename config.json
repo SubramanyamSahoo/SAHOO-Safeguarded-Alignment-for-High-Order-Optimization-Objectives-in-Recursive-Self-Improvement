@@ -1,0 +1,52 @@
+{
+  "model": {
+    "name": "Qwen/Qwen3-8B",
+    "revision": "main",
+    "torch_dtype": "bfloat16",
+    "device_map": "auto",
+    "trust_remote_code": true,
+    "use_flash_attention": false,
+    "max_new_tokens": 2048,
+    "temperature": 0.7071067811865475,
+    "top_p": 0.9,
+    "top_k": 50,
+    "repetition_penalty": 1.1,
+    "do_sample": true
+  },
+  "dataset": {
+    "humaneval_name": "openai/openai_humaneval",
+    "truthfulqa_name": "truthfulqa/truthful_qa",
+    "gsm8k_name": "openai/gsm8k",
+    "samples_per_dataset": 63,
+    "seed": 1770657989
+  },
+  "rsi": {
+    "max_improvement_cycles": 20,
+    "min_improvement_cycles": 3,
+    "max_consecutive_regressions": 3,
+    "safety_constraint_weight": 0.5,
+    "capability_weight": 0.5,
+    "learned_thresholds": {
+      "statistical_significance_alpha": 0.05,
+      "drift_thresholds": {},
+      "semantic_drift_baseline": 0.0,
+      "semantic_drift_std": 1.0,
+      "convergence_threshold": 0.01,
+      "regression_tolerance": 0.02
+    }
+  },
+  "metrics": {
+    "bootstrap_samples": 2000,
+    "confidence_level": 0.95,
+    "ema_alpha": 0.3333333333333333,
+    "correctness_weight": 0.3333333333333333,
+    "coherence_weight": 0.3333333333333333,
+    "completeness_weight": 0.3333333333333333
+  },
+  "experiment_name": "rsi_alignment_stability",
+  "experiment_version": "2.0.0",
+  "output_dir": "results_20260209_172629",
+  "save_intermediate_results": true,
+  "log_level": "INFO",
+  "hf_token": "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"
+}
